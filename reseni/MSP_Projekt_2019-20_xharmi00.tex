@@ -655,13 +655,13 @@
 	1) Bodově odhadněte~$ \beta_0 $, $ \beta_1 $ a~rozptyl~$ s^2 $.
 	\vspace{1em}
 
-	$ \beta_1 = \frac{1}{\mathrm{det}(H)} \intopen{n \sum\limits_{i = 1}^n
+	$ b_2 = \frac{1}{\mathrm{det}(H)} \intopen{n \sum\limits_{i = 1}^n
 	x_i y_i - \sum\limits_{i = 1}^n x_i \sum\limits_{i = 1}^n y_i} =
 	1,0088 $ \\
-	$ \beta_0 = \overline{y} - \beta_1 \overline{x} = -102,2152 $ \\
-	$ y = \beta_0 + \beta_1 x = -102,2152 + 1,0088 x $ \\
-	$ S_{\mathrm{min}}^* = \sum\limits_{i = 1}^n y_i^2 - \beta_0
-	\sum\limits_{i = 1}^n y_i - \beta_1 \sum\limits_{i = 1}^n x_i y_i =
+	$ b_1 = \overline{y} - b_2 \overline{x} = -102,2152 $ \\
+	$ y = b_1 + b_2 x = -102,2152 + 1,0088 x $ \\
+	$ S_{\mathrm{min}}^* = \sum\limits_{i = 1}^n y_i^2 - b_1
+	\sum\limits_{i = 1}^n y_i - b_2 \sum\limits_{i = 1}^n x_i y_i =
 	615,3705 $ \\
 	$ s^2 = \frac{S_{\mathrm{min}}^*}{n - 2} = \frac{S_{\mathrm{min}}^*}{20
 	- 2} = 34,1872 $
@@ -673,7 +673,7 @@
 	$ H : \beta_0 = -100 $, $ H_A : \beta_0 \neq -100 $ \\
 	$ h^{11} = \frac{\sum\limits_{i = 1}^n x_i^2}{\mathrm{det}(H)} =
 	4,9295 $ \\
-	$ t = \frac{\beta_0 - (-100)}{s \sqrt{h^{11}}} = -0,1706 $ \\
+	$ t = \frac{b_1 - (-100)}{s \sqrt{h^{11}}} = -0,1706 $ \\
 	$ t_{1 - \frac{\alpha}{2}}(n - 2) = t_{0,975}(20 - 2) = 2,1009 $ \\
 	$ t \in \overline{W} = \intlr{-2,1009; 2,1009} $, a~tedy $ H :
 	\beta_0 = -100 $ se \textbf{nezamítá}.
@@ -682,7 +682,7 @@
 
 	$ H : \beta_1 = 1 $, $ H_A : \beta_1 \neq 1 $ \\
 	$ h^{22} = \frac{n}{\mathrm{det}(H)} = 0,0002 $ \\
-	$ t = \frac{\beta_1 - 1}{s \sqrt{h^{22}}} = 0,1155 $ \\
+	$ t = \frac{b_2 - 1}{s \sqrt{h^{22}}} = 0,1155 $ \\
 	$ t_{1 - \frac{\alpha}{2}}(n - 2) = t_{0,975}(20 - 2) = 2,1009 $ \\
 	$ t \in \overline{W} = \intlr{-2,1009; 2,1009} $, a~tedy $ H :
 	\beta_1 = 1 $ se \textbf{nezamítá}.
